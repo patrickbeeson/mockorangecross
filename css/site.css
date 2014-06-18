@@ -1,0 +1,142 @@
+/* mockorangecross.com styles */
+/* Author: Patrick Beeson, patrickbeeson.com */
+/* Updated: 8/11/2013 */
+
+/* Links */
+
+a {
+	color: #f5822b;
+}
+
+a:hover {
+	color: #C85C09;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 50px;	
+}
+
+/* Nav */
+
+.navbar .brand {
+	font-family: 'Playball', cursive;
+	font-size: 35px;
+}
+
+.navbar-inverse .brand {
+	color: #f5822b;	
+}
+
+.navbar-inverse .brand:hover {
+	color:#fff;
+}
+
+/* Team */
+
+#team h3 {
+	text-align: center;
+}
+
+#team ul.thumbnails {
+	margin-top: 5px;	
+}
+
+/* Header */
+
+#header {
+	padding: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.header-image-wrapper {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: height 0.25s linear;
+    -o-transition: height 0.25s linear;
+    -ms-transition: height 0.25s linear;
+    -moz-transition: height 0.25s linear;
+    transition: height 0.25s linear;
+}
+
+.header-image {
+    background: transparent 50% 50% no-repeat;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.15s ease;
+    -o-transition: opacity 0.15s ease;
+    -ms-transition: opacity 0.15s ease;
+    -moz-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;                   
+}
+
+.header-image.loaded {
+    opacity: 1;
+}
+
+.header-image.cover {
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0 -1px; /* account for browser rounding errors */
+}
+
+.header-image {
+    background-image: url(http://mockorangecross.com/img/alex_ryan_bg.png);
+}
+
+@media (max-width: 979px) {
+
+    .navbar-fixed-top {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-image-wrapper {
+        height: 250px;
+    }
+    
+    .navbar-fixed-top {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-image-wrapper {
+        height: 200px;
+    }
+    
+    .navbar-fixed-top {
+        margin-bottom: 20px;
+    }
+}
+
+/* mobile-ify */
+@media screen and (max-device-width: 568px) {
+
+    #header {
+        margin-top: 50px;
+    }
+
+    .header-image {
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        -o-transform: translate3d(0, 0, 0) !important;
+        -ms-transform: translate3d(0, 0, 0) !important;
+        -moz-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important;
+    }
+
+}
